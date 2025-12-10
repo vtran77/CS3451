@@ -1,0 +1,10 @@
+^C:\USERS\VINCE\ONEDRIVE\DESKTOP\CS3451\CS3451\BUILD\CMAKEFILES\7B1C266CE22405F8D2E7E98BE1D7DB56\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/vince/OneDrive/Desktop/CS3451/cs3451 -BC:/Users/vince/OneDrive/Desktop/CS3451/cs3451/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/vince/OneDrive/Desktop/CS3451/cs3451/build/cs3451-computer-graphics.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

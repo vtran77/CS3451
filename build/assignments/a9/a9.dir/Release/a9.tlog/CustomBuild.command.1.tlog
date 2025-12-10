@@ -1,0 +1,10 @@
+^C:\USERS\VINCE\ONEDRIVE\DESKTOP\CS3451\CS3451\ASSIGNMENTS\A9\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/vince/OneDrive/Desktop/CS3451/cs3451 -BC:/Users/vince/OneDrive/Desktop/CS3451/cs3451/build --check-stamp-file C:/Users/vince/OneDrive/Desktop/CS3451/cs3451/build/assignments/a9/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
